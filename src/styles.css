@@ -1,0 +1,52 @@
+body{
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: 'flex';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+.appBar {
+    border-radius: 15px;;
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    width: 600px ;
+    border: 2px solid black;
+}
+.video{
+  width: 550px;
+}
+.gridContainer{
+  justify-content: center;
+}
+.paper{
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+  @media screen And (max-width :990px) {
+    .wrapper {
+        width: 90%;
+    }
+    .video{
+      width: 300px;
+    }
+    .gridContainer{
+     flex-direction: column;
+    }
+  }
